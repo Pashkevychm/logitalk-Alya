@@ -3,7 +3,7 @@ import threading
 from sys import excepthook
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-name = input("Під яким іменем підключитись?")
+name = input("Під яким іменем підключитись")
 client_socket.connect(("6.tcp.eu.ngrok.io", 19732))
 client_socket.send(name.encode())
 
@@ -29,6 +29,7 @@ while True:
 
 
 client_socket.close()
+
 
 
 
